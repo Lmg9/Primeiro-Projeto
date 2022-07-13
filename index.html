@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css"/>
+       
+    <title>L9</title>
+</head>
+<body>
+    <div class="grid-container">
+        
+        
+    </div>
+
+    <header>
+        <h1>Sejam Bem Vindos</h1>
+        <h2>Esse é meu 1º Projeto</h2>
+        <h3 id="t1">Caso deseje, mude a cor da pagina para sua navegação logo abaixo</h3>
+        <p>Escolha uma cor de fundo:</p>
+       <select id="coresFundo" onchange="mudaCorFundo()">
+           <option value=" rgb(158, 212, 243)">Original</option>
+           <option value="white">Branco</option>
+           <option value="blue">Azul</option>
+           <option value="yellow">Amarelo</option>
+           <option value="red">Vermelho</option>
+           <option value="green">Verde</option>
+           <option value="grey">Cinza</option>
+           
+               
+       </select>  
+    
+       <button onclick="print()">Imprimir</button>
+    
+        <script src="index.js"></script>
+
+        <style>
+            body{
+                background: rgb(158, 212, 243);
+                
+            }
+        </style>
+
+    </header>
+    <nav id="header-nav">
+        <h1>Navegue no projeto Leandro</h1>
+        <ul>
+            <li><a href="#Leandro"><button onclick="Leandro()">Leandro☚</button></a></li>
+            <li><a href="#footer"><button onclick="Leandro()">Footer☚</button></a></li>
+        </ul>
+        
+    </nav> 
+
+    
+    <section id="Leandro">
+        <h1>Conheçam as minhas Redes</h1>
+        <article>
+            <header>
+                <h1>L➈ #1</h1>
+                <p><mark>Vamos conhecer Leandro</mark></p>
+            </header>
+            <section>
+                <p>Abaixo o link para o Face de Leandro...</p>
+            </section
+
+            <figure>
+                <img width="400"
+                src=data:image/jpeg;base64,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
+            </figure>
+        </article>
+    
+    <aside>
+         <ul>
+         <li><a href="https://www.facebook.com/lmarquesgoncalves/">facebook☚</a></li>
+         </ul>
+    </aside>
+        </ul>
+    <header>
+        <h1>Instagram #2</h1>
+       <p><mark>Agora o Insta</mark></p>
+   </header>
+   <section>
+       <p>Abaixo o link para o Insta de Leandro...</p>
+   </section
+
+   <figure>
+       <img width="400"
+       src=https://i.pinimg.com/736x/9a/45/92/9a459274265f76125497befe1af554fd.jpg
+   </figure>
+</article>
+    
+<aside>
+<ul>
+<li><a href="https://www.instagram.com/lmarquesg/">Instagram☚</a></li>
+</ul>
+
+</aside>
+
+<header>
+    <h1>Linkedin #3</h1>
+   <p><mark>Vamos de Linkedin!!!</mark></p>
+</header>
+<section>
+   <p>Abaixo o link para a rede social profisional do Leandro...</p>
+</section
+
+<figure>
+   <img width="550"
+   src=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzitR4IXiC6vtNp_RaP-5J8isDDSiNNRT-TQ&usqp=CAU
+</figure>
+</article>
+
+<aside>
+<ul>
+<li><a href="https://www.linkedin.com/in/leandro-marques-gon%C3%A7alves-889047100">Linkedin☚</a></li>
+</ul>
+
+</aside>
+    </section>
+
+    <h2>Você sabia que ★Leandro tem um canal no YouTube★ com sua esposa ?</h2>
+    <ul>
+        <object width="700" height="350">
+            <param name="movie" value="https://www.youtube.com/embed/Zizz8zx-4AA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" />
+            <embed src="https://www.youtube.com/embed/Zizz8zx-4AA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" type="application/x-shockwave-flash" width="425" height="350" />
+            </object>
+    <li><a href="https://www.youtube.com/maisqueumcasal">Canal - Mais que um Casal☚</a></li>
+    <p></p>
+    <p></p>
+    <li><a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStgnZlySML6qaP1phvBj3hhJNQNBbdHzIo8A&usqp=CAU">Clique e conheça o time de ❤ de Leandro☚</a></li>
+    </ul>
+
+
+    
+</aside>
+<footer id="footer">
+   <address> Site criador por <mark>Leandro Marques</mark> - <p>
+       
+      <p><mark>☎ Contato: 21 991195576</mark></p>
+       <p><mark>✉ e-mail - lmgama1978@gmail.com</mark></p></address>
+   <nav id="footer-nav">
+       <h1>Voltar para seção</h1>
+
+       <ul>
+        <li><a href="#Leandro"><button onclick="Leandro()">Leandro☚</button></a></li>
+           
+       </ul>
+
+
+   </nav>
+</footer>
+   
+  
+</body>
+</html>
